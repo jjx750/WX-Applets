@@ -1,0 +1,51 @@
+<view>云函数</view>
+<button bindtap="sum">云函数</button>
+<button bindtap="getOpenId">获取当前用户openid</button>
+<button bindtap="aaa">批量删除数据</button>
+<view>云存储</view>
+<button bindtap="upload">上传图片</button>
+<button bindtap="getFile">展示图片</button>
+<van-button size="mini" name="https://b.yzcdn.cn/vant/icon-demo-1126.png"></van-button>
+<view>商品上传</view>
+<view>
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="T恤">
+      商品价格:<input id="up_input" name="price" placeholder="请输入商品价格" bindinput ="tee_price"/>
+      商品标签:<input id="up_input" name="tag" placeholder="请输入商品标签" bindinput ="tee_tag"/>
+      商品数量:<input id="up_input" name="num" placeholder="请输入商品数量" bindinput ="tee_num"/>
+      商品标题:<input id="up_input" name="title" placeholder="请输入商品标题" bindinput ="tee_title"/>
+      <van-button type="primary" class="upload" bindtap="up_teeData">上传数据</van-button>
+    </van-tab>
+    <van-tab title="连衣裙">
+      商品价格:<input id="up_input" name="price" placeholder="请输入商品价格" bindinput ="dress_price"/>
+      商品标签:<input id="up_input" name="tag" placeholder="请输入商品标签" bindinput ="dress_tag"/>
+      商品数量:<input id="up_input" name="num" placeholder="请输入商品数量" bindinput ="dress_num"/>
+      商品标题:<input id="up_input" name="title" placeholder="请输入商品标题" bindinput ="dress_title"/>
+      <van-button type="primary" class="upload" bindtap="up_dressData">上传数据</van-button>
+    </van-tab>
+    <van-tab title="卫衣/外套">
+      商品价格:<input id="up_input" name="price" placeholder="请输入商品价格" bindinput ="coat_price"/>
+      商品标签:<input id="up_input" name="tag" placeholder="请输入商品标签" bindinput ="coat_tag"/>
+      商品数量:<input id="up_input" name="num" placeholder="请输入商品数量" bindinput ="coat_num"/>
+      商品标题:<input id="up_input" name="title" placeholder="请输入商品标题" bindinput ="coat_title"/>
+      <van-button type="primary" class="upload" bindtap="up_coatData">上传数据</van-button>
+    </van-tab>
+    <van-tab title="裤装">
+      商品价格:<input id="up_input" name="price" placeholder="请输入商品价格" bindinput ="pants_price"/>
+      商品标签:<input id="up_input" name="tag" placeholder="请输入商品标签" bindinput ="pants_tag"/>
+      商品数量:<input id="up_input" name="num" placeholder="请输入商品数量" bindinput ="pants_num"/>
+      商品标题:<input id="up_input" name="title" placeholder="请输入商品标题" bindinput ="pants_title"/>
+      <van-button type="primary" class="upload" bindtap="up_pantsData">上传数据</van-button>
+    </van-tab>
+  
+    <van-tab title="衬衫">
+      商品价格:<input id="up_input" name="price" placeholder="请输入商品价格" bindinput ="shirt_price"/>
+      商品标签:<input id="up_input" name="tag" placeholder="请输入商品标签" bindinput ="shirt_tag"/>
+      商品数量:<input id="up_input" name="num" placeholder="请输入商品数量" bindinput ="shirt_num"/>
+      商品标题:<input id="up_input" name="title" placeholder="请输入商品标题" bindinput ="shirt_title"/>
+      <van-button type="primary" class="upload" bindtap="up_shirtData">上传数据</van-button>
+    </van-tab>
+  </van-tabs>
+</view>
+
+<view style="position: fixed;top: 0;right: 0;"><img src="cloud://xy-test.7879-xy-test-1300071332/img/tee/0.jpg" /></view>

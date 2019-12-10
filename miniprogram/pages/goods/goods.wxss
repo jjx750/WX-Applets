@@ -1,0 +1,106 @@
+/* 轮播图 */
+#goods-slideshow{
+  height:750rpx;
+  width:100%;
+  text-align:center;
+}
+.slideshow-img{
+  height:750rpx;
+  width:98%;
+}
+/* 商品标题 */
+.goods-title-container
+{
+  background-color: white;
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+}
+.goods-title{
+  font-weight:bold;
+  font-size: 35rpx;
+}
+/* 商品价格 */
+.goods-price{
+  color: red;
+  font-size: 35rpx;
+  font-weight:bold;
+  padding:10rpx;
+}
+.origin-price{
+  text-decoration:line-through;
+  background-color: white;
+  padding: 0rpx 10rpx 10rpx 10rpx;
+}
+/* 运费跟销量 */
+.otherInfo{
+  background-color: white;
+  margin-top: 3rpx;
+  padding: 30rpx;
+}
+.otherInfo view{
+  display:inline-block;
+  padding-left: 20rpx;
+}
+.salesVolume{
+float: right;
+}
+/* 衣服尺寸 */
+.commodity_size{
+  border: solid black 1rpx;
+  margin-left: 5rpx;
+  margin-top: 15rpx;
+}
+
+
+/* 购买数量与加减 */
+.sum{
+  display: inline-block;
+  border: solid #C7C7C7 1rpx;
+  font-size:45rpx;
+  position: relative;
+  left: 50rpx;
+  top: 10rpx;
+}
+.normal{
+  padding-left: 14rpx;
+  padding-right: 14rpx;
+}
+.disabled{
+  padding-left: 14rpx;
+  padding-right: 14rpx;
+}
+.sum1{
+  display:inline-block;
+  border: solid #C7C7C7 1rpx;
+  padding-left: 14rpx;
+  padding-right: 14rpx;
+}
+/* 加入购物车容器 */
+.addToCart{
+  width: auto;
+  height: 100rpx;
+  margin-top: 50rpx;
+  text-align:center;
+}
+.detail_img{
+  margin: 0 50rpx 0 50rpx;
+  background-color: #FFFFFF;
+}
+/* 加入购物车按钮 */
+.cart{
+width: 300rpx;
+display: inline-block;
+}
+.like{
+display: inline-block;
+width: 300rpx;
+}
+radio-group{
+  display:inline-block;
+}
+.cloth_sizi{
+  margin: 20rpx 0rpx 30rpx 20rpx;
+}
+.blank{
+height: 90rpx;
+}
