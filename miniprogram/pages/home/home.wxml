@@ -1,0 +1,26 @@
+<view class="home_slideshow_container">
+  <swiper  class="home_slideshow" indicator-dots="true" indicator-color="#FFFFFF" autoplay="true" interval="6000" current="0">
+    <view class="slideshow_container">
+      <block wx:for="{{slideshow}}" wx:key="index">
+        <swiper-item>
+          <image class="home_img" src="{{item.img}}" bindtap="jumpPage" data-index="{{index}}" />
+        </swiper-item>
+      </block>
+    </view>
+  </swiper>
+</view>
+<view class="column_container">
+    <view class="img_container">
+      <image class="column_left_img" src="{{left_img}}"/>
+      <image class="column_right_img" src="{{right_img}}"/>
+    </view>
+</view>
+<view class="second_column_container">
+  <image  class="second_columno" src="{{second_left_img}}"/>
+  <image  class="second_mini01" src="{{second_left_img01}}"/>
+  <image  class="second_mini02" src="{{second_left_img02}}"/>
+  <image  class="second_mini03" src="{{second_left_img03}}"/>
+  <image  class="second_mini04" src="{{second_left_img04}}"/>
+</view>
+
+

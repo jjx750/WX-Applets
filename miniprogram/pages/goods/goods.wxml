@@ -1,0 +1,47 @@
+
+<swiper id="goods-slideshow" indicator-dots="true"indicator-color="#FFFFFF" autoplay="true" interval="6000">
+  <view class="slideshow-img-container">
+    <block wx:for="{{slideshow}}" wx:key="index">
+      <swiper-item>
+        <image class="slideshow-img" src="{{item}}"/>
+      </swiper-item>
+    </block>
+  </view>
+</swiper>
+<view class="goods-title-container">
+  <view class="goods-title">{{title}}</view>
+  <view class="goods-price">¥{{price}}.00</view>
+  <view class="origin-price">¥{{originPrice}}.00</view>
+</view>
+<view class="otherInfo">
+  <view>运费¥5.00</view>
+  <view class="salesVolume">销量{{salesVolume}}</view>
+</view>
+<van-collapse value="{{ activeNames }}" bind:change="onChange">
+  <van-collapse-item title="{{specification}}" name="1">
+    <radio-group bindchange="radio_change">
+      <radio class="cloth_sizi" wx:for="{{cloth_sizi}}" wx:key="item.index" value="{{item.size}}" checked="{{item.checked}}">
+        <text>{{item.size}}</text>
+      </radio>
+        <view slot="footer" class="sum">
+          <view slot="footer">
+	          <text class="normal" bindtap="plus">+</text>
+            <view class="sum1">{{buy_sum}}</view>
+            <text class="{{condition}}" bindtap="less">-</text>
+          </view>
+        </view>
+    </radio-group>
+  </van-collapse-item>
+</van-collapse>
+<view class="goods_img">
+  <block wx:for="{{goods_show}}" wx:key="index">
+    <image src="{{item.img}}" class="detail_img" mode="heightFix"/>
+  </block>
+</view>
+<view class="blank"></view>
+<van-goods-action>
+  <van-goods-action-icon icon="chat-o" text="客服" bind:click="onClickIcon"/>
+  <van-goods-action-icon icon="cart-o" text="购物车" bind:click="onClickIcon"/>
+  <van-goods-action-button text="{{shopping_button}}" type="warning" bind:click="onClickButton" />
+  <van-goods-action-button text="立即购买" bind:click="onClickButton"/>
+</van-goods-action>

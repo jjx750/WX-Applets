@@ -1,0 +1,9 @@
+/* miniprogram/pages/order/order.wxss */
+.splitLine{
+  width: 100%;
+  height: 5rpx;
+  background: #EE1A1A
+}
+.address{
+  margin:10rpx;
+}
