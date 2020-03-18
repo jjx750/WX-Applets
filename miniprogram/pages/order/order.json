@@ -1,9 +1,0 @@
-{
-  "usingComponents": {
-    "van-popup": "vant-weapp/popup",
-    "van-cell": "vant-weapp/cell",
-    "van-cell-group": "vant-weapp/cell-group",
-    "van-icon": "vant-weapp/icon"
-  },
-  "navigationBarTitleText": "确认订单"
-}

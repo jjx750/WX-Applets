@@ -1,4 +1,0 @@
-<!--miniprogram/pages/order/order.wxml-->
-<van-cell title="选择收货地址" is-link bind:click="showPopup" icon="plus" class="address"/>
-<van-popup show="{{ show }}" bind:close="onClose">dfdfdfdf</van-popup>
-<view class="splitLine"></view>
