@@ -50,8 +50,6 @@ float: right;
   margin-left: 5rpx;
   margin-top: 15rpx;
 }
-
-
 /* 购买数量与加减 */
 .sum{
   display: inline-block;
@@ -82,9 +80,13 @@ float: right;
   margin-top: 50rpx;
   text-align:center;
 }
+.goods_img{
+  background-color: #ffffff;
+  width: 100%;
+}
 .detail_img{
-  margin: 0 50rpx 0 50rpx;
-  background-color: #FFFFFF;
+ text-align:center;
+ margin: 0 20%;
 }
 /* 加入购物车按钮 */
 .cart{
@@ -94,9 +96,6 @@ display: inline-block;
 .like{
 display: inline-block;
 width: 300rpx;
-}
-radio-group{
-  display:inline-block;
 }
 .cloth_sizi{
   margin: 20rpx 0rpx 30rpx 20rpx;

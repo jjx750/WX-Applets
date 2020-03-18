@@ -1,3 +1,4 @@
+
 <swiper id="goods-slideshow" indicator-dots="true"indicator-color="#FFFFFF" autoplay="true" interval="6000">
   <view class="slideshow-img-container">
     <block wx:for="{{slideshow}}" wx:key="index">
@@ -32,9 +33,11 @@
     </radio-group>
   </van-collapse-item>
 </van-collapse>
-<block wx:for="{{goods_show}}" wx:key="index">
-<image src="{{item.img}}" class="detail_img" mode="aspectFill"/>
-</block>
+<view class="goods_img">
+  <block wx:for="{{goods_show}}" wx:key="index">
+    <image src="{{item.img}}" class="detail_img" mode="heightFix"/>
+  </block>
+</view>
 <view class="blank"></view>
 <van-goods-action>
   <van-goods-action-icon icon="chat-o" text="客服" bind:click="onClickIcon"/>

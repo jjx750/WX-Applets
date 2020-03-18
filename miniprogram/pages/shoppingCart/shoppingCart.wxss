@@ -92,3 +92,7 @@ background-color: #FFFFFF;
   font-size:38rpx;
   color: red;
 }
+.goods_img{
+background-color:#FF7000;
+  width: 100%;
+}

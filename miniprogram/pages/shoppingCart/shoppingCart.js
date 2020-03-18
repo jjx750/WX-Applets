@@ -18,15 +18,15 @@ Page({
   // 删除商品功能,index是商品下标,delnum是要删除的商品数量
   // 循环获取商品列表后,
   goods_delete:function(){
-    let goods = this.data.goods;
-    let index = -1;
-    let delnum = 0;
+    let goods = this.data.goods;  //商品列表
+    let index = -1;               //商品下标
+    let delnum = 0;               //需要删除的商品数量
     let goods_arr = [];
     for(let i = 0;i<goods.length;i++){
-      if(goods[i].checked == false){
+      if(goods[i].checked === false){
         goods_arr.push(goods[i])
-        console.log('符合判断', goods[i].checked = false)
-      } else if (goods[i].checked == true){
+        console.log('符合判断', goods[i].checked)
+      } else if (goods[i].checked === true){
         console.log(goods[i]._id)
         let id = goods[i]._id
         db.collection('shoppingCart').doc(id)
@@ -160,8 +160,8 @@ Page({
           goods: res.data
         })
       }
-    });
-    this.prompt();
+    }),
+      this.prompt();
   },
   /**
    * 生命周期函数--监听页面隐藏

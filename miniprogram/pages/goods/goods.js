@@ -12,7 +12,6 @@ Page({
     activeNames: ['1'],
     buy_sum:1,
     actions_title:' ',
-    // 下拉菜单
     specification:'S码',
     actions: [{name: ' ',subname:' '}],
     menu: '',
@@ -34,11 +33,6 @@ Page({
     goods_info: false,
     shopping_button:'加入购物车',
     goods_arr:1
-  },
-  onChange(event) {
-    this.setData({
-      activeNames: event.detail
-    });
   },
   // 点击商品数量减少
   less: function () {
@@ -70,7 +64,7 @@ Page({
     })
   },
   /*
-  点击后取得与所点击的商品名称相同的商品尺寸
+  点击后取得与所点击的商品名称与商品尺寸
   然后判断是否与所选择的尺寸相同
   如果没有便上传商品数据到购物车
   */
@@ -150,7 +144,11 @@ Page({
       num: this.data.goodsData.num,
       title: this.data.goodsData.title,
       price: this.data.goodsData.price,
-      slideshow: [this.data.goodsData.slideshow1, this.data.goodsData.slideshow2, this.data.goodsData.slideshow3],
+      slideshow: [
+        this.data.goodsData.slideshow1,
+        this.data.goodsData.slideshow2, 
+        this.data.goodsData.slideshow3
+        ],
       cover: this.data.goodsData.cover,
       salesVolume: this.data.goodsData.salesVolume,
       originPrice: this.data.goodsData.originPrice,
