@@ -21,7 +21,7 @@ Page({
     let goods = this.data.goods;  //商品列表
     let index = -1;               //商品下标
     let delnum = 0;               //需要删除的商品数量
-    let goods_arr = [];
+    let goods_arr = [];          
     for(let i = 0;i<goods.length;i++){
       if(goods[i].checked === false){
         goods_arr.push(goods[i])

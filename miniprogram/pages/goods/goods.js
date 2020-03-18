@@ -34,6 +34,11 @@ Page({
     shopping_button:'加入购物车',
     goods_arr:1
   },
+  onChange:function(){
+    this.setData({
+      specification: select_sizi
+    })
+  },
   // 点击商品数量减少
   less: function () {
     var buy_sum = this.data.buy_sum;
